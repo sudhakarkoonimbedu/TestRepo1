@@ -1,0 +1,1667 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 3,
+        "name": "performLogin",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 33468337789,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "the user access the Hybrid Desktop Application",
+            "match": {
+              "location": "SearchMemberLookUpAndVerifyMemberDetails.user_can_access_the_Hybrid_desktop_application(String,String\u003e)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "userid",
+                  "dt79655"
+                ],
+                "line": 5
+              },
+              {
+                "cells": [
+                  "password",
+                  "rxnova1"
+                ],
+                "line": 6
+              },
+              {
+                "cells": [
+                  "region",
+                  "DR1"
+                ],
+                "line": 7
+              }
+            ],
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 17571609226,
+              "status": "passed"
+            },
+            "match": {
+              "location": "HybridDesktop_SharedResource.beforeTest(Scenario)"
+            }
+          }
+        ],
+        "line": 37,
+        "name": "Member Lookup search with valid data",
+        "description": "",
+        "id": "memberlookup-search-verify-claim-details;member-lookup-search-with-valid-data;;2",
+        "after": [
+          {
+            "result": {
+              "duration": 458339,
+              "status": "passed"
+            },
+            "match": {
+              "location": "HybridDesktop_SharedResource.afterTest(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 13444582305,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "User in Landing Page, he selects the application from menu",
+            "match": {
+              "location": "SearchMemberLookUpAndVerifyMemberDetails.the_user_selects_the_application_from_menu_options(String,String\u003e)"
+            },
+            "matchedColumns": [
+              0
+            ],
+            "rows": [
+              {
+                "cells": [
+                  "menu",
+                  "Miscellaneous-\u003eRxNova Connect"
+                ],
+                "line": 12
+              }
+            ],
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 16589071976,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "User search for existing member by entering details in Member Lookup",
+            "match": {
+              "location": "SearchMemberLookUpAndVerifyMemberDetails.the_user_search_for_the_existing_member(String,String\u003e)"
+            },
+            "matchedColumns": [
+              1,
+              2,
+              3,
+              4,
+              5,
+              6,
+              7,
+              8,
+              9,
+              10
+            ],
+            "rows": [
+              {
+                "cells": [
+                  "SearchCustomerSet",
+                  "Humana"
+                ],
+                "line": 14
+              },
+              {
+                "cells": [
+                  "SearchCustomer",
+                  "0319 - 0319HUMANA"
+                ],
+                "line": 15
+              },
+              {
+                "cells": [
+                  "SearchMemberID",
+                  "90818000101"
+                ],
+                "line": 16
+              },
+              {
+                "cells": [
+                  "SearchAltID",
+                  ""
+                ],
+                "line": 17
+              },
+              {
+                "cells": [
+                  "SearchExactMatch",
+                  "checked"
+                ],
+                "line": 18
+              },
+              {
+                "cells": [
+                  "SearchFirstName",
+                  ""
+                ],
+                "line": 19
+              },
+              {
+                "cells": [
+                  "SearchMI",
+                  ""
+                ],
+                "line": 20
+              },
+              {
+                "cells": [
+                  "SearchLastName",
+                  ""
+                ],
+                "line": 21
+              },
+              {
+                "cells": [
+                  "SearchDOB",
+                  ""
+                ],
+                "line": 22
+              },
+              {
+                "cells": [
+                  "SearchClaimID",
+                  ""
+                ],
+                "line": 23
+              }
+            ],
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 4147118407,
+              "status": "passed"
+            },
+            "output": [
+              "Completed Scenario"
+            ],
+            "line": 24,
+            "name": "Member details should be displayed",
+            "match": {
+              "location": "SearchMemberLookUpAndVerifyMemberDetails.verify_member_details(String,String\u003e)"
+            },
+            "matchedColumns": [
+              16,
+              17,
+              18,
+              19,
+              11,
+              12,
+              13,
+              14,
+              15
+            ],
+            "rows": [
+              {
+                "cells": [
+                  "Customer",
+                  "Customer^0319 - 0319HUMANA"
+                ],
+                "line": 25
+              },
+              {
+                "cells": [
+                  "MemberID",
+                  "Member ID^000000090818000101"
+                ],
+                "line": 26
+              },
+              {
+                "cells": [
+                  "AltMemberID",
+                  "Alt Member ID^"
+                ],
+                "line": 27
+              },
+              {
+                "cells": [
+                  "FirstName",
+                  "First Name^MBR1"
+                ],
+                "line": 28
+              },
+              {
+                "cells": [
+                  "LastName",
+                  "Last Name^MBRNONBRIDGECUST"
+                ],
+                "line": 29
+              },
+              {
+                "cells": [
+                  "MI",
+                  "MI^"
+                ],
+                "line": 30
+              },
+              {
+                "cells": [
+                  "DOB",
+                  "DOB^01/15/1964"
+                ],
+                "line": 31
+              },
+              {
+                "cells": [
+                  "StartDate",
+                  "Start Date^01/01/2015"
+                ],
+                "line": 32
+              },
+              {
+                "cells": [
+                  "EndDate",
+                  "End Date^No end date"
+                ],
+                "line": 33
+              }
+            ],
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 9,
+            "name": "@Functional"
+          }
+        ]
+      },
+      {
+        "line": 3,
+        "name": "performLogin",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 1586536,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "the user access the Hybrid Desktop Application",
+            "match": {
+              "location": "SearchMemberLookUpAndVerifyMemberDetails.user_can_access_the_Hybrid_desktop_application(String,String\u003e)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "userid",
+                  "dt79655"
+                ],
+                "line": 5
+              },
+              {
+                "cells": [
+                  "password",
+                  "rxnova1"
+                ],
+                "line": 6
+              },
+              {
+                "cells": [
+                  "region",
+                  "DR1"
+                ],
+                "line": 7
+              }
+            ],
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 116471,
+              "status": "passed"
+            },
+            "match": {
+              "location": "HybridDesktop_SharedResource.beforeTest(Scenario)"
+            }
+          }
+        ],
+        "line": 57,
+        "name": "Verify Header details",
+        "description": "",
+        "id": "memberlookup-search-verify-claim-details;verify-header-details;;2",
+        "after": [
+          {
+            "result": {
+              "duration": 1114015,
+              "status": "passed"
+            },
+            "match": {
+              "location": "HybridDesktop_SharedResource.afterTest(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 12229060933,
+              "status": "passed"
+            },
+            "line": 42,
+            "name": "User in Member Lookup Search Page and click on Blue arrow at Customer Field",
+            "match": {
+              "location": "SearchMemberLookUpAndVerifyMemberDetails.click_on_customer_link()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 3524193003,
+              "status": "passed"
+            },
+            "output": [
+              "Completed Scenario"
+            ],
+            "line": 43,
+            "name": "User verifies the header details",
+            "match": {
+              "location": "SearchMemberLookUpAndVerifyMemberDetails.verify_header_details(String,String\u003e)"
+            },
+            "matchedColumns": [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5,
+              6,
+              7,
+              8,
+              9
+            ],
+            "rows": [
+              {
+                "cells": [
+                  "CustomerSet",
+                  "Customer Set:^Humana"
+                ],
+                "line": 44
+              },
+              {
+                "cells": [
+                  "Customer",
+                  "Customer:^0319 - 0319HUMANA"
+                ],
+                "line": 45
+              },
+              {
+                "cells": [
+                  "Client",
+                  "Client:^9007 - NBRG--CLNT1"
+                ],
+                "line": 46
+              },
+              {
+                "cells": [
+                  "Group",
+                  "Group:^RXCONNECT2"
+                ],
+                "line": 47
+              },
+              {
+                "cells": [
+                  "Gender",
+                  "Gender:^M"
+                ],
+                "line": 48
+              },
+              {
+                "cells": [
+                  "MemberID",
+                  "Member ID:^000000090818000101"
+                ],
+                "line": 49
+              },
+              {
+                "cells": [
+                  "AltMemberID",
+                  "Alt Member ID:^"
+                ],
+                "line": 50
+              },
+              {
+                "cells": [
+                  "FirstName",
+                  "First Name:^MBR1"
+                ],
+                "line": 51
+              },
+              {
+                "cells": [
+                  "LastName",
+                  "Last Name:^MBRNONBRIDGECUST"
+                ],
+                "line": 52
+              },
+              {
+                "cells": [
+                  "DOB",
+                  "DOB:^01/15/1964"
+                ],
+                "line": 53
+              }
+            ],
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 40,
+            "name": "@Functional"
+          }
+        ]
+      },
+      {
+        "line": 3,
+        "name": "performLogin",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 1475194,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "the user access the Hybrid Desktop Application",
+            "match": {
+              "location": "SearchMemberLookUpAndVerifyMemberDetails.user_can_access_the_Hybrid_desktop_application(String,String\u003e)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "userid",
+                  "dt79655"
+                ],
+                "line": 5
+              },
+              {
+                "cells": [
+                  "password",
+                  "rxnova1"
+                ],
+                "line": 6
+              },
+              {
+                "cells": [
+                  "region",
+                  "DR1"
+                ],
+                "line": 7
+              }
+            ],
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 88107,
+              "status": "passed"
+            },
+            "match": {
+              "location": "HybridDesktop_SharedResource.beforeTest(Scenario)"
+            }
+          }
+        ],
+        "line": 75,
+        "name": "Verify Claim Claim_History",
+        "description": "",
+        "id": "memberlookup-search-verify-claim-details;verify-claim-claim-history;;2",
+        "after": [
+          {
+            "result": {
+              "duration": 3212598,
+              "status": "passed"
+            },
+            "match": {
+              "location": "HybridDesktop_SharedResource.afterTest(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 81436512,
+              "status": "passed"
+            },
+            "line": 61,
+            "name": "User in Member Lookup details page",
+            "match": {
+              "location": "SearchMemberLookUpAndVerifyMemberDetails.verify_member_lookup_detail()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1492999391,
+              "status": "passed"
+            },
+            "line": 62,
+            "name": "User click on Claim icon",
+            "match": {
+              "location": "VerifyMemberLookUpClaimCallNotes.user_click_on_claim()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 12338541220,
+              "status": "passed"
+            },
+            "line": 63,
+            "name": "User verifies Claim History details",
+            "match": {
+              "location": "VerifyMemberLookUpClaimClaimHistory.user_verify_Claim_History_Details()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 1346059611,
+              "status": "passed"
+            },
+            "line": 64,
+            "name": "User click on Blue arrow in Claim History details",
+            "match": {
+              "location": "VerifyMemberLookUpClaimClaimHistory.click_on_Blue_arrow_in_Claim_History()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 1921358180,
+              "status": "passed"
+            },
+            "output": [
+              "Completed Scenario"
+            ],
+            "line": 65,
+            "name": "User verifies the Claim details",
+            "match": {
+              "location": "VerifyMemberLookUpClaimClaimDetails.verify_the_claim_details(String,String\u003e)"
+            },
+            "matchedColumns": [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5
+            ],
+            "rows": [
+              {
+                "cells": [
+                  "MemberID",
+                  "Member ID:^000000090818000101"
+                ],
+                "line": 66
+              },
+              {
+                "cells": [
+                  "DateOfBirth",
+                  "DOB:^01/15/1964"
+                ],
+                "line": 67
+              },
+              {
+                "cells": [
+                  "Gender",
+                  "Gender:^M"
+                ],
+                "line": 68
+              },
+              {
+                "cells": [
+                  "Customer",
+                  "Customer:^319 0319HUMANA"
+                ],
+                "line": 69
+              },
+              {
+                "cells": [
+                  "Client",
+                  "Client:^9007 NBRG--CLNT1 - NONBRG CLIENT--PDP"
+                ],
+                "line": 70
+              },
+              {
+                "cells": [
+                  "Group",
+                  "Group:^6/RXCONNECT2"
+                ],
+                "line": 71
+              }
+            ],
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 59,
+            "name": "@Functional"
+          }
+        ]
+      },
+      {
+        "line": 3,
+        "name": "performLogin",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 4568606,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "the user access the Hybrid Desktop Application",
+            "match": {
+              "location": "SearchMemberLookUpAndVerifyMemberDetails.user_can_access_the_Hybrid_desktop_application(String,String\u003e)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "userid",
+                  "dt79655"
+                ],
+                "line": 5
+              },
+              {
+                "cells": [
+                  "password",
+                  "rxnova1"
+                ],
+                "line": 6
+              },
+              {
+                "cells": [
+                  "region",
+                  "DR1"
+                ],
+                "line": 7
+              }
+            ],
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 105005,
+              "status": "passed"
+            },
+            "match": {
+              "location": "HybridDesktop_SharedResource.beforeTest(Scenario)"
+            }
+          }
+        ],
+        "line": 101,
+        "name": "Verify Claim Information",
+        "description": "",
+        "id": "memberlookup-search-verify-claim-details;verify-claim-information;;2",
+        "after": [
+          {
+            "result": {
+              "duration": 597138,
+              "status": "passed"
+            },
+            "match": {
+              "location": "HybridDesktop_SharedResource.afterTest(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 85831618,
+              "status": "passed"
+            },
+            "line": 80,
+            "name": "User in Member Lookup Claim details page",
+            "match": {
+              "location": "SearchMemberLookUpAndVerifyMemberDetails.verify_member_lookup_claim_detail()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 6710889401,
+              "status": "passed"
+            },
+            "output": [
+              "Completed Scenario"
+            ],
+            "line": 81,
+            "name": "User verifies the Claim Information details",
+            "match": {
+              "location": "VerifyMemberLookUpClaimClaimDetails.verify_the_claim_information(String,String\u003e)"
+            },
+            "matchedColumns": [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5,
+              6,
+              7,
+              8,
+              9,
+              10,
+              11,
+              12,
+              13,
+              14,
+              15
+            ],
+            "rows": [
+              {
+                "cells": [
+                  "Status",
+                  "Status:^10-PWE"
+                ],
+                "line": 82
+              },
+              {
+                "cells": [
+                  "PharmacyID",
+                  "Pharmacy ID:^1225134133"
+                ],
+                "line": 83
+              },
+              {
+                "cells": [
+                  "PharmacyQlfr",
+                  "Pharmacy Qlfr:^01"
+                ],
+                "line": 84
+              },
+              {
+                "cells": [
+                  "RxNo",
+                  "Rx #:^120005443111"
+                ],
+                "line": 85
+              },
+              {
+                "cells": [
+                  "POSNo",
+                  "POS #:^19-255-000078"
+                ],
+                "line": 86
+              },
+              {
+                "cells": [
+                  "ClaimNo",
+                  "Claim #:^19-655-000078-1"
+                ],
+                "line": 87
+              },
+              {
+                "cells": [
+                  "DateFilled",
+                  "Date Filled:^05/17/2019"
+                ],
+                "line": 88
+              },
+              {
+                "cells": [
+                  "DateWritten",
+                  "Date Written:^07/16/2019"
+                ],
+                "line": 89
+              },
+              {
+                "cells": [
+                  "DateReversed",
+                  "Date Reversed:^"
+                ],
+                "line": 90
+              },
+              {
+                "cells": [
+                  "DateAdded",
+                  "Date Added:^09/12/2019"
+                ],
+                "line": 91
+              },
+              {
+                "cells": [
+                  "TimeAdded",
+                  "Time Added:^13:17:12"
+                ],
+                "line": 92
+              },
+              {
+                "cells": [
+                  "DateUpdated",
+                  "Date Updated:^"
+                ],
+                "line": 93
+              },
+              {
+                "cells": [
+                  "TimeUpdated",
+                  "Time Updated:^00:00:00"
+                ],
+                "line": 94
+              },
+              {
+                "cells": [
+                  "RxOrigin",
+                  "Rx Origin:^1"
+                ],
+                "line": 95
+              },
+              {
+                "cells": [
+                  "Source",
+                  "Source:^POS"
+                ],
+                "line": 96
+              },
+              {
+                "cells": [
+                  "Version",
+                  "Version:^D0"
+                ],
+                "line": 97
+              }
+            ],
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 78,
+            "name": "@Functional"
+          }
+        ]
+      },
+      {
+        "line": 3,
+        "name": "performLogin",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 1421787,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "the user access the Hybrid Desktop Application",
+            "match": {
+              "location": "SearchMemberLookUpAndVerifyMemberDetails.user_can_access_the_Hybrid_desktop_application(String,String\u003e)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "userid",
+                  "dt79655"
+                ],
+                "line": 5
+              },
+              {
+                "cells": [
+                  "password",
+                  "rxnova1"
+                ],
+                "line": 6
+              },
+              {
+                "cells": [
+                  "region",
+                  "DR1"
+                ],
+                "line": 7
+              }
+            ],
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 119790,
+              "status": "passed"
+            },
+            "match": {
+              "location": "HybridDesktop_SharedResource.beforeTest(Scenario)"
+            }
+          }
+        ],
+        "line": 134,
+        "name": "Verify Drug Override Information",
+        "description": "",
+        "id": "memberlookup-search-verify-claim-details;verify-drug-override-information;;2",
+        "after": [
+          {
+            "result": {
+              "duration": 508730,
+              "status": "passed"
+            },
+            "match": {
+              "location": "HybridDesktop_SharedResource.afterTest(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 62001605,
+              "status": "passed"
+            },
+            "line": 106,
+            "name": "User in Member Lookup Claim details page",
+            "match": {
+              "location": "SearchMemberLookUpAndVerifyMemberDetails.verify_member_lookup_claim_detail()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 11533370950,
+              "status": "passed"
+            },
+            "output": [
+              "Completed Scenario"
+            ],
+            "line": 107,
+            "name": "User verifies the Drug Override Information details",
+            "match": {
+              "location": "VerifyMemberLookUpClaimClaimDetails.verify_the_drug_override_information(String,String\u003e)"
+            },
+            "matchedColumns": [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5,
+              6,
+              7,
+              8,
+              9,
+              10,
+              11,
+              12,
+              13,
+              14,
+              15,
+              16,
+              17,
+              18,
+              19,
+              20,
+              21,
+              22
+            ],
+            "rows": [
+              {
+                "cells": [
+                  "NDC",
+                  "NDC:^00004-0800-85"
+                ],
+                "line": 108
+              },
+              {
+                "cells": [
+                  "LabelName",
+                  "Label Name:^TAMIFLU 75 MG CAPSULE"
+                ],
+                "line": 109
+              },
+              {
+                "cells": [
+                  "GenericName",
+                  "Generic Name:^OSELTAMIVIR PHOSPHATE"
+                ],
+                "line": 110
+              },
+              {
+                "cells": [
+                  "DaysSupply",
+                  "Days Supply:^5"
+                ],
+                "line": 111
+              },
+              {
+                "cells": [
+                  "Quantity",
+                  "Quantity:^10.000"
+                ],
+                "line": 112
+              },
+              {
+                "cells": [
+                  "DAW",
+                  "DAW:^0"
+                ],
+                "line": 113
+              },
+              {
+                "cells": [
+                  "NewRefill",
+                  "New/Refill:^0"
+                ],
+                "line": 114
+              },
+              {
+                "cells": [
+                  "Compound",
+                  "Compound:^1"
+                ],
+                "line": 115
+              },
+              {
+                "cells": [
+                  "DrugDiscount",
+                  "Drug Discount:^"
+                ],
+                "line": 116
+              },
+              {
+                "cells": [
+                  "SpecialtyDrugFlag",
+                  "Specialty Drug Flag:^Y"
+                ],
+                "line": 117
+              },
+              {
+                "cells": [
+                  "ResAuthNumber",
+                  "Restricted Authorization Number:^"
+                ],
+                "line": 118
+              },
+              {
+                "cells": [
+                  "PreAuthNumber",
+                  "Pre-Authorization Number:^"
+                ],
+                "line": 119
+              },
+              {
+                "cells": [
+                  "CustAuthNumber",
+                  "Customized Authorization Number:^"
+                ],
+                "line": 120
+              },
+              {
+                "cells": [
+                  "PriorAuthNumberSub",
+                  "Prior Authorization Number Submitted:^"
+                ],
+                "line": 121
+              },
+              {
+                "cells": [
+                  "ClinicalSupportID",
+                  "Clinical Support ID:^"
+                ],
+                "line": 122
+              },
+              {
+                "cells": [
+                  "SubmissionClarCode",
+                  "Submission Clarification Code:^1"
+                ],
+                "line": 123
+              },
+              {
+                "cells": [
+                  "OtherCoverage",
+                  "Other Coverage:^1"
+                ],
+                "line": 124
+              },
+              {
+                "cells": [
+                  "DURInterven",
+                  "DUR Interven:^00"
+                ],
+                "line": 125
+              },
+              {
+                "cells": [
+                  "DURConflict",
+                  "DUR Conflict:^NA"
+                ],
+                "line": 126
+              },
+              {
+                "cells": [
+                  "DUROutcome",
+                  "DUR Outcome:^1B"
+                ],
+                "line": 127
+              },
+              {
+                "cells": [
+                  "PostPay2",
+                  "Post Pay 2:^"
+                ],
+                "line": 128
+              },
+              {
+                "cells": [
+                  "PostPay3",
+                  "Post Pay 3:^"
+                ],
+                "line": 129
+              },
+              {
+                "cells": [
+                  "PostPay4",
+                  "Post Pay 4:^D"
+                ],
+                "line": 130
+              }
+            ],
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 104,
+            "name": "@Functional"
+          }
+        ]
+      },
+      {
+        "line": 3,
+        "name": "performLogin",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 1591363,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "the user access the Hybrid Desktop Application",
+            "match": {
+              "location": "SearchMemberLookUpAndVerifyMemberDetails.user_can_access_the_Hybrid_desktop_application(String,String\u003e)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "userid",
+                  "dt79655"
+                ],
+                "line": 5
+              },
+              {
+                "cells": [
+                  "password",
+                  "rxnova1"
+                ],
+                "line": 6
+              },
+              {
+                "cells": [
+                  "region",
+                  "DR1"
+                ],
+                "line": 7
+              }
+            ],
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 100780,
+              "status": "passed"
+            },
+            "match": {
+              "location": "HybridDesktop_SharedResource.beforeTest(Scenario)"
+            }
+          }
+        ],
+        "line": 156,
+        "name": "Verify Pharmacy Prescriber Information",
+        "description": "",
+        "id": "memberlookup-search-verify-claim-details;verify-pharmacy-prescriber-information;;2",
+        "after": [
+          {
+            "result": {
+              "duration": 466788,
+              "status": "passed"
+            },
+            "match": {
+              "location": "HybridDesktop_SharedResource.afterTest(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 37307416,
+              "status": "passed"
+            },
+            "line": 138,
+            "name": "User in Member Lookup Claim details page",
+            "match": {
+              "location": "SearchMemberLookUpAndVerifyMemberDetails.verify_member_lookup_claim_detail()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 4893309275,
+              "status": "passed"
+            },
+            "output": [
+              "Completed Scenario"
+            ],
+            "line": 139,
+            "name": "User verifies the Pharmacy Prescriber Information details",
+            "match": {
+              "location": "VerifyMemberLookUpClaimClaimDetails.verify_the_pharmacy_prescriber_information(String,String\u003e)"
+            },
+            "matchedColumns": [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5,
+              6,
+              7,
+              8,
+              9,
+              10,
+              11,
+              12
+            ],
+            "rows": [
+              {
+                "cells": [
+                  "PharmacyName",
+                  "Pharmacy Name:^ATHENS PHARMACY"
+                ],
+                "line": 140
+              },
+              {
+                "cells": [
+                  "Address",
+                  "Address:^705 W MARKET ST"
+                ],
+                "line": 141
+              },
+              {
+                "cells": [
+                  "City",
+                  "City:^ATHENS"
+                ],
+                "line": 142
+              },
+              {
+                "cells": [
+                  "State",
+                  "State:^AL"
+                ],
+                "line": 143
+              },
+              {
+                "cells": [
+                  "ZIP",
+                  "ZIP:^35611"
+                ],
+                "line": 144
+              },
+              {
+                "cells": [
+                  "Phone",
+                  "Phone:^(256)232-2242"
+                ],
+                "line": 145
+              },
+              {
+                "cells": [
+                  "Affiliation",
+                  "Affiliation:^9000391"
+                ],
+                "line": 146
+              },
+              {
+                "cells": [
+                  "Chain",
+                  "Chain:^0"
+                ],
+                "line": 147
+              },
+              {
+                "cells": [
+                  "PharmacyNetwork",
+                  "Pharmacy Network:^0069"
+                ],
+                "line": 148
+              },
+              {
+                "cells": [
+                  "PrescriberID",
+                  "Prescriber ID:^1053398768"
+                ],
+                "line": 149
+              },
+              {
+                "cells": [
+                  "PrescriberQlfr",
+                  "Prescriber Qlfr:^01"
+                ],
+                "line": 150
+              },
+              {
+                "cells": [
+                  "PrescriberName",
+                  "Prescriber Name:^OTTO BURKY"
+                ],
+                "line": 151
+              },
+              {
+                "cells": [
+                  "FillRecInterval",
+                  "Fill Received Interval:^999"
+                ],
+                "line": 152
+              }
+            ],
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 136,
+            "name": "@Functional"
+          }
+        ]
+      },
+      {
+        "line": 3,
+        "name": "performLogin",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 1490884,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "the user access the Hybrid Desktop Application",
+            "match": {
+              "location": "SearchMemberLookUpAndVerifyMemberDetails.user_can_access_the_Hybrid_desktop_application(String,String\u003e)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "userid",
+                  "dt79655"
+                ],
+                "line": 5
+              },
+              {
+                "cells": [
+                  "password",
+                  "rxnova1"
+                ],
+                "line": 6
+              },
+              {
+                "cells": [
+                  "region",
+                  "DR1"
+                ],
+                "line": 7
+              }
+            ],
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 105005,
+              "status": "passed"
+            },
+            "match": {
+              "location": "HybridDesktop_SharedResource.beforeTest(Scenario)"
+            }
+          }
+        ],
+        "line": 180,
+        "name": "Verify Claim Pricing Information",
+        "description": "",
+        "id": "memberlookup-search-verify-claim-details;verify-claim-pricing-information;;2",
+        "after": [
+          {
+            "result": {
+              "duration": 511143,
+              "status": "passed"
+            },
+            "match": {
+              "location": "HybridDesktop_SharedResource.afterTest(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 26791265,
+              "status": "passed"
+            },
+            "line": 160,
+            "name": "User in Member Lookup Claim details page",
+            "match": {
+              "location": "SearchMemberLookUpAndVerifyMemberDetails.verify_member_lookup_claim_detail()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 4799988232,
+              "status": "passed"
+            },
+            "output": [
+              "Completed Scenario"
+            ],
+            "line": 161,
+            "name": "User verifies the Claim Pricing Information details",
+            "match": {
+              "location": "VerifyMemberLookUpClaimClaimDetails.verify_the_claim_pricing_information(String,String\u003e)"
+            },
+            "matchedColumns": [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5,
+              6,
+              7,
+              8,
+              9,
+              10,
+              11,
+              12
+            ],
+            "rows": [
+              {
+                "cells": [
+                  "PlanPaid",
+                  "Plan Paid:^$0.00"
+                ],
+                "line": 162
+              },
+              {
+                "cells": [
+                  "PatientPaid",
+                  "Patient Paid:^$184.26"
+                ],
+                "line": 163
+              },
+              {
+                "cells": [
+                  "AWPCost",
+                  "AWP Cost:^$182.26"
+                ],
+                "line": 164
+              },
+              {
+                "cells": [
+                  "MACIngrCost",
+                  "MAC Ingr Cost:^$0.00"
+                ],
+                "line": 165
+              },
+              {
+                "cells": [
+                  "UCAmount",
+                  "U \u0026 C Amount:^$305.00"
+                ],
+                "line": 166
+              },
+              {
+                "cells": [
+                  "WACAmount",
+                  "WAC Amount:^$151.88"
+                ],
+                "line": 167
+              },
+              {
+                "cells": [
+                  "PriceSource",
+                  "Price Source:^AWP"
+                ],
+                "line": 168
+              },
+              {
+                "cells": [
+                  "SubIngrCost",
+                  "Sub Ingr Cost:^$305.00"
+                ],
+                "line": 169
+              },
+              {
+                "cells": [
+                  "DispenseFee",
+                  "Dispense Fee:^$0.00"
+                ],
+                "line": 170
+              },
+              {
+                "cells": [
+                  "SalesTax",
+                  "Sales Tax:^$0.00"
+                ],
+                "line": 171
+              },
+              {
+                "cells": [
+                  "IncentiveAmount",
+                  "Incentive Amount:^$0.00"
+                ],
+                "line": 172
+              },
+              {
+                "cells": [
+                  "Copay",
+                  "Copay:^$0.00"
+                ],
+                "line": 173
+              },
+              {
+                "cells": [
+                  "Total",
+                  "Total:^$305.00"
+                ],
+                "line": 174
+              }
+            ],
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 158,
+            "name": "@Functional"
+          }
+        ]
+      }
+    ],
+    "name": "MemberLookup Search verify Claim Details",
+    "description": "",
+    "id": "memberlookup-search-verify-claim-details",
+    "keyword": "Feature",
+    "uri": "features/MemberLookup/MemberLookup_Claim_Verify_ClaimDetail.feature"
+  }
+]

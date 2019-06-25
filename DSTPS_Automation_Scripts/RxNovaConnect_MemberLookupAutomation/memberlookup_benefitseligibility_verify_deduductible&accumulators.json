@@ -1,0 +1,889 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 3,
+        "name": "performLogin",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 34401421786,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "the user access the Hybrid Desktop Application",
+            "match": {
+              "location": "SearchMemberLookUpAndVerifyMemberDetails.user_can_access_the_Hybrid_desktop_application(String,String\u003e)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "userid",
+                  "dt79655"
+                ],
+                "line": 5
+              },
+              {
+                "cells": [
+                  "password",
+                  "rxnova1"
+                ],
+                "line": 6
+              },
+              {
+                "cells": [
+                  "region",
+                  "DR1"
+                ],
+                "line": 7
+              }
+            ],
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 17354477179,
+              "status": "passed"
+            },
+            "match": {
+              "location": "HybridDesktop_SharedResource.beforeTest(Scenario)"
+            }
+          }
+        ],
+        "line": 37,
+        "name": "Member Lookup search with valid data",
+        "description": "",
+        "id": "memberlookup-search-and-verify-benefits-and-eligibility-deductible-\u0026-accumulators;member-lookup-search-with-valid-data;;2",
+        "after": [
+          {
+            "result": {
+              "duration": 639684,
+              "status": "passed"
+            },
+            "match": {
+              "location": "HybridDesktop_SharedResource.afterTest(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 15998652138,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "User in Landing Page, he selects the application from menu",
+            "match": {
+              "location": "SearchMemberLookUpAndVerifyMemberDetails.the_user_selects_the_application_from_menu_options(String,String\u003e)"
+            },
+            "matchedColumns": [
+              0
+            ],
+            "rows": [
+              {
+                "cells": [
+                  "menu",
+                  "Miscellaneous-\u003eRxNova Connect"
+                ],
+                "line": 12
+              }
+            ],
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 16211301876,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "User search for existing member by entering details in Member Lookup",
+            "match": {
+              "location": "SearchMemberLookUpAndVerifyMemberDetails.the_user_search_for_the_existing_member(String,String\u003e)"
+            },
+            "matchedColumns": [
+              1,
+              2,
+              3,
+              4,
+              5,
+              6,
+              7,
+              8,
+              9,
+              10
+            ],
+            "rows": [
+              {
+                "cells": [
+                  "SearchCustomerSet",
+                  "Humana"
+                ],
+                "line": 14
+              },
+              {
+                "cells": [
+                  "SearchCustomer",
+                  "0319 - 0319HUMANA"
+                ],
+                "line": 15
+              },
+              {
+                "cells": [
+                  "SearchMemberID",
+                  "90818000101"
+                ],
+                "line": 16
+              },
+              {
+                "cells": [
+                  "SearchAltID",
+                  ""
+                ],
+                "line": 17
+              },
+              {
+                "cells": [
+                  "SearchExactMatch",
+                  "checked"
+                ],
+                "line": 18
+              },
+              {
+                "cells": [
+                  "SearchFirstName",
+                  ""
+                ],
+                "line": 19
+              },
+              {
+                "cells": [
+                  "SearchMI",
+                  ""
+                ],
+                "line": 20
+              },
+              {
+                "cells": [
+                  "SearchLastName",
+                  ""
+                ],
+                "line": 21
+              },
+              {
+                "cells": [
+                  "SearchDOB",
+                  ""
+                ],
+                "line": 22
+              },
+              {
+                "cells": [
+                  "SearchClaimID",
+                  ""
+                ],
+                "line": 23
+              }
+            ],
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 4206887458,
+              "status": "passed"
+            },
+            "output": [
+              "Completed Scenario"
+            ],
+            "line": 24,
+            "name": "Member details should be displayed",
+            "match": {
+              "location": "SearchMemberLookUpAndVerifyMemberDetails.verify_member_details(String,String\u003e)"
+            },
+            "matchedColumns": [
+              16,
+              17,
+              18,
+              19,
+              11,
+              12,
+              13,
+              14,
+              15
+            ],
+            "rows": [
+              {
+                "cells": [
+                  "Customer",
+                  "Customer^0319 - 0319HUMANA"
+                ],
+                "line": 25
+              },
+              {
+                "cells": [
+                  "MemberID",
+                  "Member ID^000000090818000101"
+                ],
+                "line": 26
+              },
+              {
+                "cells": [
+                  "AltMemberID",
+                  "Alt Member ID^"
+                ],
+                "line": 27
+              },
+              {
+                "cells": [
+                  "FirstName",
+                  "First Name^MBR1"
+                ],
+                "line": 28
+              },
+              {
+                "cells": [
+                  "LastName",
+                  "Last Name^MBRNONBRIDGECUST"
+                ],
+                "line": 29
+              },
+              {
+                "cells": [
+                  "MI",
+                  "MI^"
+                ],
+                "line": 30
+              },
+              {
+                "cells": [
+                  "DOB",
+                  "DOB^01/15/1964"
+                ],
+                "line": 31
+              },
+              {
+                "cells": [
+                  "StartDate",
+                  "Start Date^01/01/2015"
+                ],
+                "line": 32
+              },
+              {
+                "cells": [
+                  "EndDate",
+                  "End Date^No end date"
+                ],
+                "line": 33
+              }
+            ],
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 9,
+            "name": "@Functional"
+          }
+        ]
+      },
+      {
+        "line": 3,
+        "name": "performLogin",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 3209581,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "the user access the Hybrid Desktop Application",
+            "match": {
+              "location": "SearchMemberLookUpAndVerifyMemberDetails.user_can_access_the_Hybrid_desktop_application(String,String\u003e)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "userid",
+                  "dt79655"
+                ],
+                "line": 5
+              },
+              {
+                "cells": [
+                  "password",
+                  "rxnova1"
+                ],
+                "line": 6
+              },
+              {
+                "cells": [
+                  "region",
+                  "DR1"
+                ],
+                "line": 7
+              }
+            ],
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 752835,
+              "status": "passed"
+            },
+            "match": {
+              "location": "HybridDesktop_SharedResource.beforeTest(Scenario)"
+            }
+          }
+        ],
+        "line": 57,
+        "name": "Verify Header details",
+        "description": "",
+        "id": "memberlookup-search-and-verify-benefits-and-eligibility-deductible-\u0026-accumulators;verify-header-details;;2",
+        "after": [
+          {
+            "result": {
+              "duration": 1502351,
+              "status": "passed"
+            },
+            "match": {
+              "location": "HybridDesktop_SharedResource.afterTest(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 12244136337,
+              "status": "passed"
+            },
+            "line": 42,
+            "name": "User in Member Lookup Search Page and click on Blue arrow at Customer Field",
+            "match": {
+              "location": "SearchMemberLookUpAndVerifyMemberDetails.click_on_customer_link()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 3453196606,
+              "status": "passed"
+            },
+            "output": [
+              "Completed Scenario"
+            ],
+            "line": 43,
+            "name": "User verifies the header details",
+            "match": {
+              "location": "SearchMemberLookUpAndVerifyMemberDetails.verify_header_details(String,String\u003e)"
+            },
+            "matchedColumns": [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5,
+              6,
+              7,
+              8,
+              9
+            ],
+            "rows": [
+              {
+                "cells": [
+                  "CustomerSet",
+                  "Customer Set:^Humana"
+                ],
+                "line": 44
+              },
+              {
+                "cells": [
+                  "Customer",
+                  "Customer:^0319 - 0319HUMANA"
+                ],
+                "line": 45
+              },
+              {
+                "cells": [
+                  "Client",
+                  "Client:^9007 - NBRG--CLNT1"
+                ],
+                "line": 46
+              },
+              {
+                "cells": [
+                  "Group",
+                  "Group:^RXCONNECT2"
+                ],
+                "line": 47
+              },
+              {
+                "cells": [
+                  "Gender",
+                  "Gender:^M"
+                ],
+                "line": 48
+              },
+              {
+                "cells": [
+                  "MemberID",
+                  "Member ID:^000000090818000101"
+                ],
+                "line": 49
+              },
+              {
+                "cells": [
+                  "AltMemberID",
+                  "Alt Member ID:^"
+                ],
+                "line": 50
+              },
+              {
+                "cells": [
+                  "FirstName",
+                  "First Name:^MBR1"
+                ],
+                "line": 51
+              },
+              {
+                "cells": [
+                  "LastName",
+                  "Last Name:^MBRNONBRIDGECUST"
+                ],
+                "line": 52
+              },
+              {
+                "cells": [
+                  "DOB",
+                  "DOB:^01/15/1964"
+                ],
+                "line": 53
+              }
+            ],
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 40,
+            "name": "@Functional"
+          }
+        ]
+      },
+      {
+        "line": 3,
+        "name": "performLogin",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 1714773,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "the user access the Hybrid Desktop Application",
+            "match": {
+              "location": "SearchMemberLookUpAndVerifyMemberDetails.user_can_access_the_Hybrid_desktop_application(String,String\u003e)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "userid",
+                  "dt79655"
+                ],
+                "line": 5
+              },
+              {
+                "cells": [
+                  "password",
+                  "rxnova1"
+                ],
+                "line": 6
+              },
+              {
+                "cells": [
+                  "region",
+                  "DR1"
+                ],
+                "line": 7
+              }
+            ],
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 146946,
+              "status": "passed"
+            },
+            "match": {
+              "location": "HybridDesktop_SharedResource.beforeTest(Scenario)"
+            }
+          }
+        ],
+        "line": 104,
+        "name": "Verify Benefits and Eligibility Deductible \u0026 Accumulators",
+        "description": "",
+        "id": "memberlookup-search-and-verify-benefits-and-eligibility-deductible-\u0026-accumulators;verify-benefits-and-eligibility-deductible-\u0026-accumulators;;2",
+        "after": [
+          {
+            "result": {
+              "duration": 608302,
+              "status": "passed"
+            },
+            "match": {
+              "location": "HybridDesktop_SharedResource.afterTest(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 163126482,
+              "status": "passed"
+            },
+            "line": 61,
+            "name": "User in Member Lookup details page",
+            "match": {
+              "location": "SearchMemberLookUpAndVerifyMemberDetails.verify_member_lookup_detail()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1321293006,
+              "status": "passed"
+            },
+            "line": 62,
+            "name": "User click on Benefits Eligibility icon",
+            "match": {
+              "location": "VerifyMemberLookUpBenefitsEligibilityDetail.user_click_on_benefits_eligibility()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 4556776720,
+              "status": "passed"
+            },
+            "line": 63,
+            "name": "User click on Deductible \u0026 Accumulators",
+            "match": {
+              "location": "VerifyMemberLookUpBenefitsEligibilityDeductibleAccumulator.user_click_on_deductible_and_accumulators()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 14135965289,
+              "status": "passed"
+            },
+            "output": [
+              "Completed Scenario"
+            ],
+            "line": 64,
+            "name": "User verifies Deductible \u0026 Accumulators details",
+            "match": {
+              "location": "VerifyMemberLookUpBenefitsEligibilityDeductibleAccumulator.verify_dual_coverage_details(String,String\u003e)"
+            },
+            "matchedColumns": [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5,
+              6,
+              7,
+              8,
+              9,
+              10,
+              11,
+              12,
+              13,
+              14,
+              15,
+              16,
+              17,
+              18,
+              19,
+              20,
+              21,
+              22,
+              23,
+              24,
+              25,
+              26
+            ],
+            "rows": [
+              {
+                "cells": [
+                  "ABPStart",
+                  "Start^01/01/2019"
+                ],
+                "line": 65
+              },
+              {
+                "cells": [
+                  "ABPEnd",
+                  "End^12/31/2019"
+                ],
+                "line": 66
+              },
+              {
+                "cells": [
+                  "ABPLevel",
+                  "Level^Group"
+                ],
+                "line": 67
+              },
+              {
+                "cells": [
+                  "ACAccumulatorID",
+                  "Accumulator ID^AMQTPCOMM"
+                ],
+                "line": 68
+              },
+              {
+                "cells": [
+                  "ACStart",
+                  "Start^01/01/2019"
+                ],
+                "line": 69
+              },
+              {
+                "cells": [
+                  "ACEnd",
+                  "End^12/31/2019"
+                ],
+                "line": 70
+              },
+              {
+                "cells": [
+                  "ACIndicator",
+                  "Indicator^RxNova"
+                ],
+                "line": 71
+              },
+              {
+                "cells": [
+                  "AccumAmounts1",
+                  "DED!Type^DED - Deductible (Commercial)!Name^DED!Medical/Rx^All!Network^All!Retail/Mail Order^All!Brand/Generic^All!CSR Indicator^ST - Standard!CSR Comparison^$0.00!Renewal^Benefit Period"
+                ],
+                "line": 72
+              },
+              {
+                "cells": [
+                  "AccumAmounts2",
+                  "DED2!Type^DED - Deductible (Commercial)!Name^DED2!Medical/Rx^All!Network^All!Retail/Mail Order^All!Brand/Generic^All!CSR Indicator^04 - 73% AV Level Silver Plan CSR!CSR Comparison^$0.00!Renewal^Benefit Period"
+                ],
+                "line": 73
+              },
+              {
+                "cells": [
+                  "AccumAmounts3",
+                  "MOP!Type^MOP - Maximum Out of Pocket!Name^MOP!Medical/Rx^All!Network^All!Retail/Mail Order^All!Brand/Generic^All!CSR Indicator^ST - Standard!CSR Comparison^$0.00!Renewal^Benefit Period"
+                ],
+                "line": 74
+              },
+              {
+                "cells": [
+                  "AccumAmounts4",
+                  "MOP2!Type^MOP - Maximum Out of Pocket!Name^MOP2!Medical/Rx^All!Network^All!Retail/Mail Order^All!Brand/Generic^All!CSR Indicator^04 - 73% AV Level Silver Plan CSR!CSR Comparison^$0.00!Renewal^Benefit Period"
+                ],
+                "line": 75
+              },
+              {
+                "cells": [
+                  "AccumAmounts5",
+                  "MPP!Type^MPP - Maximum Paid by Plan!Name^MPP!Medical/Rx^All!Network^All!Retail/Mail Order^All!Brand/Generic^All!CSR Indicator^ST - Standard!CSR Comparison^$0.00!Renewal^Benefit Period"
+                ],
+                "line": 76
+              },
+              {
+                "comments": [
+                  {
+                    "line": 77,
+                    "value": "#| AAType\t\t\t\t\t\t| \u003cAAType\u003e   \t        |"
+                  },
+                  {
+                    "line": 78,
+                    "value": "#| AAName\t\t\t\t\t\t| \u003cAAName\u003e            |"
+                  },
+                  {
+                    "line": 79,
+                    "value": "#| AAMedicalRx\t\t\t\t| \u003cAAMedicalRx\u003e       |"
+                  },
+                  {
+                    "line": 80,
+                    "value": "#| AANetwork\t\t\t\t\t| \u003cAANetwork\u003e   \t    |"
+                  },
+                  {
+                    "line": 81,
+                    "value": "#| AARetailMailOrder\t| \u003cAARetailMailOrder\u003e |"
+                  },
+                  {
+                    "line": 82,
+                    "value": "#| AABrandGeneric\t\t| \u003cAABrandGeneric\u003e    |"
+                  },
+                  {
+                    "line": 83,
+                    "value": "#| AACSRIndicator\t\t| \u003cAACSRIndicator\u003e    |"
+                  },
+                  {
+                    "line": 84,
+                    "value": "#| AACSRComparison\t\t| \u003cAACSRComparison\u003e   |"
+                  },
+                  {
+                    "line": 85,
+                    "value": "#| AARenewal\t\t\t\t\t| \u003cAARenewal\u003e         |"
+                  }
+                ],
+                "cells": [
+                  "IAIndividualLimit",
+                  "Individual limit^$100.00"
+                ],
+                "line": 86
+              },
+              {
+                "cells": [
+                  "IAMemberPaid",
+                  "Member paid^$100.00"
+                ],
+                "line": 87
+              },
+              {
+                "cells": [
+                  "IAAmountToMeet",
+                  "Amount to meet^$0.00"
+                ],
+                "line": 88
+              },
+              {
+                "cells": [
+                  "IAPlanPaid",
+                  "Plan paid^$0.00"
+                ],
+                "line": 89
+              },
+              {
+                "cells": [
+                  "IAExcludedAmount",
+                  "Excluded amount^$0.00"
+                ],
+                "line": 90
+              },
+              {
+                "cells": [
+                  "IAPLRO",
+                  "PLRO^$0.00"
+                ],
+                "line": 91
+              },
+              {
+                "cells": [
+                  "IAClaims",
+                  "# Claims^1"
+                ],
+                "line": 92
+              },
+              {
+                "cells": [
+                  "IAMetDate",
+                  "Met date^2019-09-08"
+                ],
+                "line": 93
+              },
+              {
+                "cells": [
+                  "FAFamilyLimit",
+                  "Family limit^$120.00"
+                ],
+                "line": 94
+              },
+              {
+                "cells": [
+                  "FAFamilyPaid",
+                  "Family paid^$100.00"
+                ],
+                "line": 95
+              },
+              {
+                "cells": [
+                  "FAAmountToMeet",
+                  "Amount to meet^$20.00"
+                ],
+                "line": 96
+              },
+              {
+                "cells": [
+                  "FAPlanPaid",
+                  "Plan paid^$0.00"
+                ],
+                "line": 97
+              },
+              {
+                "cells": [
+                  "FAExcludedAmount",
+                  "Excluded amount^$0.00"
+                ],
+                "line": 98
+              },
+              {
+                "cells": [
+                  "FAClaims",
+                  "# Claims^1"
+                ],
+                "line": 99
+              },
+              {
+                "cells": [
+                  "FAMetDate",
+                  "Met date^"
+                ],
+                "line": 100
+              }
+            ],
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 59,
+            "name": "@Functional"
+          }
+        ]
+      }
+    ],
+    "name": "MemberLookup Search and verify Benefits and Eligibility Deductible \u0026 Accumulators",
+    "description": "",
+    "id": "memberlookup-search-and-verify-benefits-and-eligibility-deductible-\u0026-accumulators",
+    "keyword": "Feature",
+    "uri": "features/MemberLookup/MemberLookup_BenefitsEligibility_Verify_Deduductible\u0026Accumulators.feature"
+  }
+]
